@@ -1,4 +1,4 @@
-import { ResultsList } from "./results/ResultsList";
+import { ResultsList } from "./components/ResultsList";
 import Link from "next/link";
 
 export default async function Page() {
