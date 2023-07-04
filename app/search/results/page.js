@@ -1,4 +1,4 @@
-import { ResultsList } from "./ResultsList";
+import { ResultsList } from "./components/ResultsList";
 
 export default async function Page() {
     const res = await fetch('http://localhost:3000/api/search');
