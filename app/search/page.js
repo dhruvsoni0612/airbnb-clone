@@ -1,5 +1,6 @@
 import { ResultsList } from "./components/ResultsList";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Page() {
     const data=[
@@ -52,13 +53,24 @@ export default function Page() {
           "rating": 4.4
         }
       ]
-      console.log(data)
+    // return (
+    //     <>
+    //     <div className="flex items-center justify-center w-screen bg-cover bg-center h-80 bg-[url('/images/booking-website-hero2.png')]">
+    //         <Link href="/search/results" className="rounded-full bg-[#673979] hover:bg-[#7B3C7D] px-4 py-2 text-white">Browse Stays</Link>
+    //     </div>
+    //         <ResultsList data={data} />
+    //     </>
+    // );
     return (
         <>
-        <div className="flex items-center justify-center w-screen bg-cover bg-center h-48 bg-[url('/images/booking-website-hero.png')]">
-            <Link href="/search/results" className="rounded-full bg-[#673979] hover:bg-[#7B3C7D] px-4 py-2 text-white">Browse Stays</Link>
+        <div className="relative h-[300px] sm:h-[300px] lg:h-[400px] xl:h-[450px] 2xl:h-[450px]">
+            <Image src="https://links.papareact.com/0fm" layout="fill" objectFit="cover" />
+            <div className="absolute top-1/2 w-full text-center">
+                <p className="text-sm sm:text-lg">Not sure where to go? Perfect</p>
+                <button className="text-pink-600 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">Explore</button>
+            </div>
         </div>
-            <ResultsList data={data} />
+        <ResultsList data={data} />
         </>
-    );
+    )
 }
