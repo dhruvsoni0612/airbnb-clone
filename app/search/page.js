@@ -1,8 +1,8 @@
-import { ResultsList } from "./components/ResultsList";
+import { ResultsList } from "./results/ResultsList";
 import Link from "next/link";
 
 export default async function Page() {
-    const res = await fetch(https://airbnb-clone.vercel.app/api/search');
+    const res = await fetch('http://localhost:3000/api/search');
     const data = await res.json();
 
     return (
