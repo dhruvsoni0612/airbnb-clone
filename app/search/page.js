@@ -2,7 +2,7 @@ import { ResultsList } from "./components/ResultsList";
 import Link from "next/link";
 
 export default async function Page() {
-    const res = await fetch('http(s)://dhruvsoni0612.github.io/airbnb-clone/api/search');
+    const res = await fetch('http://dhruvsoni0612.github.io/airbnb-clone/api/search');
     const data = await res.json();
 
     return (
