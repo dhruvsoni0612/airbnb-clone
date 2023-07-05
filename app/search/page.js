@@ -2,7 +2,7 @@ import { ResultsList } from "./components/ResultsList";
 import Link from "next/link";
 
 export default async function Page() {
-    const res = await fetch('http://localhost:3000/api/search');
+    const res = await fetch('/api/search');
     const data = await res.json();
 
     return (
